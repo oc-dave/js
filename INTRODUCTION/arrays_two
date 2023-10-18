@@ -1,0 +1,8 @@
+let word = "kissdry";
+let x = [6, 2, 3, 4, 1, 0, 5];
+
+let result = "";
+for (let i = 0; i < x.length; i++) {
+    result += word[x[i]]
+}
+console.log(result);
