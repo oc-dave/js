@@ -1,0 +1,189 @@
+body {
+  font-family: "Martian Mono", monospace;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+}
+
+.navTop {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+  width: 100px;
+  height: 100px;
+  font-size: large;
+}
+
+.limitedOffer {
+  font-size: 30px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 50px;
+  color: greenyellow;
+  font-family: cursive;
+  font-weight: 900;
+  margin-top: auto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItem {
+  margin-right: 200px;
+  cursor: pointer;
+  color: grey;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.sliderTitle {
+  color: rgb(158, 86, 45);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.slidderWrapper {
+  display: flex;
+  width: 500vw;
+  transition: all 1.5s ease-in-out;
+}
+
+.buyButton {
+  position: absolute;
+  top: 30%;
+  right: 13%;
+  font-size: 30px;
+  font-weight: 1000;
+  color: white;
+  border: 1px solid gray;
+  background-color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.sliderItem {
+  height: 1390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sliderBG {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(100, 102, 100);
+  left: 3%;
+  top: 2.8%;
+}
+
+.sliderTitle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  color: rgb(32, 120, 178);
+  font-weight: 1000;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.sliderPrice {
+  position: absolute;
+  top: 11%;
+  left: 8%;
+  color: rgb(255, 254, 254);
+  font-weight: 300;
+  font-size: 60px;
+  text-align: center;
+  border: 5px solid black;
+}
+
+.sliderImgone {
+  width: 2540px;
+  height: 1400px;
+}
+
+.sliderImgTwo {
+  width: 2560px;
+  height: 1390px;
+}
+
+.sliderImgThree {
+  width: 2570px;
+  height: 1390px;
+}
+
+.sliderImgFour {
+  width: 2560px;
+  height: 1390px;
+}
+
+.sliderImgFive {
+  width: 2600px;
+  height: 1390px;
+}
+
+.slider {
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 0 81%);
+}
+
+.sliderItem:nth-child(1) .sliderBG {
+  background-color: orangered; /* Color for the first slider */
+}
+
+.sliderItem:nth-child(2) .sliderBG {
+  background-color: rgb(180, 177, 177); /* Color for the second slider */
+}
+
+.sliderItem:nth-child(3) .sliderBG {
+  background-color: rgb(32, 37, 41); /* Color for the third slider */
+}
+
+.sliderItem:nth-child(4) .sliderBG {
+  background-color: rgb(130, 37, 30); /* Color for the fourth slider */
+}
+
+.sliderItem:nth-child(5) .sliderBG {
+  background-color: rgb(204, 109, 46); /* Color for the fifth slider */
+}
